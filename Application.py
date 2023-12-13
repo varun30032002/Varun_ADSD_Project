@@ -9,7 +9,7 @@ import dataset
 app = Bottle()
 
 # Connect to SQLite database
-db = dataset.connect('sqlite:///example.db')
+db = dataset.connect('sqlite:///Project.db')
 
 # Define tables
 try:

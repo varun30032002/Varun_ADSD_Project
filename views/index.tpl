@@ -6,7 +6,14 @@
     <title>Authors and Books</title>
 </head>
 <body>
-    <h1>Authors</h1>
+    <h1>Authors And Books</h1>
+    <h2>Search</h2>
+    <form action="/search" method="get">
+        <label for="search_term">Search Term:</label>
+        <input type="text" id="search_term" name="search_term" required>
+        <button type="submit">Search</button>
+    </form>
+
     <ul>
         % for author in authors:
             <li>
@@ -17,7 +24,7 @@
         % end
     </ul>
 
-    <h1>Books</h1>
+    <h1></h1>
     <ul>
         % for book in books:
             <li>
@@ -28,12 +35,7 @@
         % end
     </ul>
 
-    <h2>Search</h2>
-    <form action="/search" method="get">
-        <label for="search_term">Search Term:</label>
-        <input type="text" id="search_term" name="search_term" required>
-        <button type="submit">Search</button>
-    </form>
+
 
     <h2>Add Author</h2>
     <form action="/add_author" method="post">
